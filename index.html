@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portofolio — </title>
+  <meta name="description" content="Pelajar Teknik Mekatronika — sistem kontrol, robotika, dan elektronika .">
+
+  <!-- Font dari Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=JetBrains+Mono:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ============================================ -->
+  <!-- GARIS KONTUR DEKORATIF (elemen tanda tangan)  -->
+  <!-- ============================================ -->
+  <div class="contour-bg" aria-hidden="true">
+    <svg viewBox="0 0 1200 1600" preserveAspectRatio="none">
+      <path class="contour-line" d="M-50,200 Q300,150 600,220 T1250,180" />
+      <path class="contour-line" d="M-50,320 Q280,260 600,340 T1250,300" />
+      <path class="contour-line" d="M-50,440 Q320,380 600,460 T1250,420" />
+      <path class="contour-line" d="M-50,560 Q260,500 600,580 T1250,540" />
+    </svg>
+  </div>
+
+  <!-- ============================================ -->
+  <!-- NAVIGASI                                       -->
+  <!-- ============================================ -->
+    <header class="nav-wrap">
+    <nav class="nav">
+      <a href="#home" class="nav-logo">D<span>A</span>F<span>F</span>A<span></span></a>
+      <button class="nav-toggle" id="navToggle" aria-label="Buka menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">01<span class="nav-num"></span>Tentang</a></li>
+        <li><a href="#skills">02<span class="nav-num"></span>Keahlian</a></li>
+        <li><a href="#projects">03<span class="nav-num"></span>Proyek</a></li>
+        <li><a href="#contact">04<span class="nav-num"></span>Kontak</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ============================================ -->
+  <!-- HERO                                          -->
+  <!-- ============================================ -->
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-coords" aria-hidden="true">
+       MECHATRONICS ENGINEERING
+      </div>
+      <h1 class="hero-title">
+        <span class="hero-title-line">Merancang sistem,</span>
+        <span class="hero-title-line">Menghidupkan mesin.</span>
+      </h1>
+      <p class="hero-subtitle">
+        Saya <strong>DAFFA AZIZ NOVI SYAHPUTRA</strong> — pelajar Teknik Mekatronika yang fokus
+        pada perpaduan antara sensor, aktuator, dan logika kontrol menjadi satu sistem
+        otomasi yang bekerja dengan presisi. Di luar pembelajaran saya juga aktif di organisasi.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary"> Lihat Proyek</a>
+        <a href="#skills" class="btn btn-ghost"> Lihat Keahlian</a>
+      </div>
+      <div class="hero-scroll" aria-hidden="true">
+         <div class="scroll- line"></div>
+      </div>
+    </section>
+   
+    <!-- ============================================ -->
+    <!-- TENTANG                                       -->
+    <!-- ============================================ -->
+    <section id="about" class="about">
+      <div class="section-head">
+        <span class="section-eyebrow">01 — Tentang</span>
+        <h2 class="section-title"> Berpikir dalam sistem</h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            Saya sedang menempuh pendidikan di jurusan <strong>Teknik Mekatronika</strong>,
+            bidang yang mempertemukan mekanik, elektronika, dan pemrograman menjadi
+            satu kesatuan. Bagi saya, mekatronika adalah cara berpikir: bagaimana
+            sebuah sistem mengindra kondisi di sekitarnya, mengambil keputusan, lalu
+            bergerak dengan tepat.
+          </p>
+          <p>
+           Saya memiliki ketertarikan mendalam pada dunia <strong>manufaktur dan otomasi</strong>. 
+           Pengalaman saya mencakup perancangan berbasis <strong>gambar teknik</strong> 
+           dan eksekusi fisik melalui <strong>welding</strong>, 
+           yang dikombinasikan dengan <strong>kemampuan pemrograman mikrokontroler serta PLC</strong> 
+           untuk sistem kontrol real-time. 
+           Saya tertantang oleh proses troubleshooting—mulai dari
+           mengatasi pembacaan sensor yang eror hingga memastikan
+           otomatisasi berjalan sempurna.
+          </p>
+        </div>
+
+        <div class="about-stats">
+          <div class="stat-item">
+            <span class="stat-label"> Pendidikan</span>
+            <span class="stat-value"> SMK SMTI YOGYAKARTA</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-label"> Jurusan</span>
+            <span class="stat-value"> Teknik Mekatronika</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-label"> Area Minat</span>
+            <span class="stat-value"> Sistem Kontrol, Mesin</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-label"> Tinggal di</span>
+            <span class="stat-value"> Yogyakarta, Indonesia</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- KEAHLIAN TEKNIS                                -->
+    <!-- ============================================ -->
+    <section id="skills" class="skills">
+      <div class="section-head">
+        <span class="section-eyebrow">02 — Keahlian</span>
+        <h2 class="section-title">Tools &amp; kompetensi</h2>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-group">
+          <h3 class="skill-group-title">Elektronika &amp; Embedded</h3>
+          <ul class="skill-list">
+            <li>Arduino / ESP32</li>
+            <li>Sensor &amp; Aktuator</li>
+            <li>Desain Rangkaian (PCB)</li>
+          </ul>
+        </div>
+
+        <div class="skill-group">
+          <h3 class="skill-group-title">Pemrograman</h3>
+          <ul class="skill-list">
+            <li>C/C++</li>
+            <li>Python</li>
+            <li>Javascript</li>
+            <li>HTML</li>
+            <li>CSS</li>
+          </ul>
+        </div>
+
+        <div class="skill-group">
+          <h3 class="skill-group-title">Sistem &amp; Kontrol</h3>
+          <ul class="skill-list">
+            <li>Sistem Kontrol PID</li>
+            <li>PLC</li>
+            <li>Robotika Dasar</li>
+            <li>Pneumatik</li>
+            <li>Teknik Listrik</li>
+          </ul>
+        </div>
+
+        <div class="skill-group">
+          <h3 class="skill-group-title">Desain &amp; Simulasi</h3>
+          <ul class="skill-list">
+            <li>AutoCAD / SolidWorks</li>
+            <li>Inventor &amp; Mastercam </li>
+            <li>Prototyping</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- PROYEK MEKATRONIKA                            -->
+    <!-- ============================================ -->
+    <section id="projects" class="projects">
+      <div class="section-head">
+        <span class="section-eyebrow">03 — Proyek</span>
+        <h2 class="section-title">Sistem yang sudah dibangun</h2>
+      </div>
+
+      <div class="project-list">
+
+        <!-- PROYEK 1 -->
+        <article class="project-card">
+          <div class="project-index">P.01</div>
+          <div class="project-body">
+            <h3 class="project-title">RAK TAS DENGAN TEKNIK LAS</h3>
+            <p class="project-desc">
+              Proyek ini merancang dan mempabrikasi rak tas berbahan besi
+               yang kokoh untuk mengatasi masalah penyimpanan barang yang tidak tertata.
+               Menggunakan mesin las FCAW, proyek ini mengintegrasikan 
+               sistem mekanik struktural yang mampu menahan beban berat secara merata. 
+               Tantangan utama berupa deformasi panas pada besi tipis berhasil diatasi 
+               dengan teknik penyesuaian arus (amperage) dan metode pengelasan bertahap. 
+               Hasil akhirnya adalah rak tas ergonomis yang mampu menampung beban 
+               dengan hasil sambungan las yang rapi, kuat, dan minim cacat.
+            </p>
+            <ul class="project-tags">
+              <li>Mesin Las FCAW</li>
+              <li>Mesin Las SMAW</li>
+              <li>Sistem Mekanik</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- PROYEK 2 -->
+        <article class="project-card">
+          <div class="project-index">P.02</div>
+          <div class="project-body">
+            <h3 class="project-title">SISTEM KONTROL WITH APK</h3>
+            <p class="project-desc">
+              Proyek ini membangun sistem otomasi dan monitoring lingkungan jarak jauh berbasis IoT. 
+              Sistem bekerja dengan membaca data suhu dan kelembapan via sensor DHT11 pada Arduino, 
+              lalu diproses oleh Python untuk analisis data, dan dikontrol 
+              secara real-time melalui aplikasi Blynk. Tantangan teknis terbesar berupa latensi data 
+              dan sinkronisasi antar-platform berhasil diselesaikan melalui optimasi komunikasi serial
+              serta penggunaan Virtual Pins pada Blynk. 
+              Proyek ini menghasilkan sistem kontrol dengan waktu respons LED di bawah 1 detik untuk 
+              mengetahui jika suhu tinggi maka LED akan menyala dan jika suhu rendah maka LED akan mati.
+            </p>
+            <ul class="project-tags">
+              <li>Arduino</li>
+              <li>Python</li>
+              <li>Sensor DHT11</li>
+              <li>Led</li>
+              <li>Apk Blynk</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- PROYEK 3 -->
+        <article class="project-card">
+          <div class="project-index">P.03</div>
+          <div class="project-body">
+            <h3 class="project-title">WEB PORTOFOLIO</h3>
+            <p class="project-desc">
+              Proyek ini saya buat untuk mendigitalisasi data pribadi, riwayat pendidikan, 
+              dan hasil praktik saya ke dalam satu wadah online yang rapi. 
+              Prosesnya dimulai dari merancang tata letak, 
+              masuk ke tahap coding menggunakan Visual Studio Code, 
+              melakukan debugging tampilan lewat Inspect Element, 
+              hingga mengelola source code menggunakan Git dan GitHub sampai siap di-hosting. 
+              Di proyek ini, saya menggunakan HTML untuk struktur web, CSS untuk desain responsifnya, 
+              dan JavaScript untuk menambahkan fitur interaktif.Tantangan terbesar 
+              di proyek ini justru ada pada pengembangan soft skill. Saya belajar banyak tentang 
+              komunikasi visual—bagaimana menyusun informasi diri yang padat menjadi tampilan 
+              yang simpel dan mudah dipahami orang lain. Selain itu, problem solving saya 
+              benar-benar diasah secara mandiri saat harus memecahkan error atau bug kode, 
+              ditambah lagi manajemen waktu yang ketat agar proyek ini selesai sesuai target.
+            </p>
+            <ul class="project-tags">
+              <li>HTML</li>
+              <li>JavaScript</li>
+              <li>CSS</li>
+              <li>Hosting</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- PROYEK 4 -->
+        <article class="project-card">
+          <div class="project-index">P.04</div>
+          <div class="project-body">
+            <h3 class="project-title">SISTEM KONTROL BERBASIS INDUSTRI</h3>
+            <p class="project-desc">
+              Proyek ini saya buat untuk mensimulasikan sistem conveyor pemotong kayu otomatis yang aman, 
+              presisi, dan efisien sesuai standar pabrik. Proses pengerjaannya dimulai dari 
+              merancang logika program diagram tangga (ladder diagram) pada CX-Programmer 
+              untuk mengatur kecepatan conveyor dan interlok pisau pemotong, lalu dilanjutkan 
+              dengan membuat desain visualisasi HMI pada CX-Designer agar operator bisa 
+              memonitor jalannya mesin. Seluruh sistem kontrol ini diintegrasikan ke perangkat PLC 
+              sebagai otak utama penggerak motor penggerak dan silinder pemotong.
+              Tantangan utama di proyek ini adalah menyinkronkan waktu antara sensor pembaca 
+              panjang kayu dengan pergerakan pisau pemotong agar hasil potongannya pas. 
+              Selain itu, saya juga harus melatih ketelitian saat proses debugging karena 
+              sempat ada salah alamat I/O yang membuat program tidak jalan. Lewat proyek ini, 
+              saya jadi lebih paham cara kerja sistem otomatisasi industri, sekaligus melatih 
+              kemampuan troubleshooting dan kesabaran dalam menyelesaikan masalah kode program.
+            </p>
+            <ul class="project-tags">
+              <li>PLC</li>
+              <li>Cx Programmer</li>
+              <li>Cx Designer</li>
+              <li>Sistem Kontrol</li>
+            </ul>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- STRIP FOTO (sentuhan personal, bukan fokus utama) -->
+    <!-- ============================================ -->
+    <section class="photo-strip">
+      <p class="photo-strip-label">
+        Di luar lab — sedikit jejak dari hobi joging.
+      </p>
+      <div class="photo-strip-row">
+        <img src="foto1.jpeg" alt="foto joging">
+        <img src="foto2.jpeg" alt="foto joging">
+        <img src="foto3.jpeg" alt="foto joging">
+      </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- KONTAK                                        -->
+    <!-- ============================================ -->
+    <section id="contact" class="contact">
+      <div class="contact-inner">
+        <span class="section-eyebrow">04 — Kontak</span>
+        <h2 class="section-title">Mari terhubung</h2>
+        <p class="contact-text">
+          Terbuka untuk umum.
+        </p>
+
+        <div class="contact-links">
+          <a href="mailto:azisdaffa94@email.com" class="contact-link">
+            <span class="contact-label">Email</span>
+            <span class="contact-value">azisdaffa94@gmail.com</span>
+          </a>
+          <a href="https://instagram.com/dffa__zxx" class="contact-link" target="_blank" rel="noopener">
+            <span class="contact-label">Instagram</span>
+            <span class="contact-value">@dffa__zxx</span>
+          </a>
+          <a href="https://www.linkedin.com/in/daffa-aziz-novi-syahputra" class="contact-link" target="_blank" rel="noopener">
+            <span class="contact-label">LinkedIn</span>
+            <span class="contact-value">Daffa Aziz Novi Syahputra</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; <span id="year"></span>  DAFFA AZIZ NOVI SYAHPUTRA </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
