@@ -510,39 +510,109 @@ main > section {
 }
 
 /* ===========================================================
-   STRIP FOTO (sentuhan personal kecil)
+   STRIP FOTO joging (sentuhan personal kecil)
    =========================================================== */
-
-.photo-strip {
-  padding-top: 40px !important;
-  padding-bottom: 40px !important;
+.foto-strip {
+  padding-top: 30px !important;
+  padding-bottom: 10px !important;
 }
 
-.photo-strip-label {
+.foto-strip-label {
   font-family: var(--font-mono);
   font-size: 0.78rem;
   color: var(--text-muted);
   margin-bottom: 20px;
 }
 
-.photo-strip-row {
+.foto-strip-row {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 12px;
 }
 
-.photo-strip-row img {
+.foto-strip-row img {
   width: 100%;
-  height: 140px;
+  height: 420px;
   object-fit: cover;
   border-radius: var(--radius);
   filter: brightness(0.85) saturate(0.9);
   transition: filter 0.3s ease;
 }
 
-.photo-strip-row img:hover {
+.foto-strip-row img:hover {
   filter: brightness(1) saturate(1);
 }
+
+
+/* ===========================================================
+   STRIP FOTO serti (sentuhan personal kecil)
+   =========================================================== */
+.serti {
+  padding-top: 100px;
+}
+
+/* Mengatur baris dan kolom */
+.container-sertifikat {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+/* Mengatur background, border, dan flexbox internal kartu */
+.card-sertifikat {
+  background-color: #ffffff;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column; /* Membuat konten di dalam kartu rapi ke bawah */
+}
+
+.photo-strip-label {
+    font-size: 1.25rem;
+    font-weight: 100;
+    color: #4a5568; /* Warna abu-abu gelap yang elegan */
+    letter-spacing: 0.5px;
+    margin-bottom: 30px;
+    position: relative;
+    display: inline-block;
+}
+
+/* Dekorasi Garis Halus Bawah Teks (Opsional agar Terlihat Manis) */
+.photo-strip-label::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 2px;
+    background-color: #3182ce; /* Aksen warna biru minimalis */
+}
+
+/* Pembungkus Baris Foto (Grid) */
+.photo-strip-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px; /* Jarak antar sertifikat */
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* Tampilan Gambar Sertifikat */
+.photo-strip-row img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* Sudut melengkung halus */
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); /* Efek bayangan tipis */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    object-fit: cover;
+}
+
+/* Efek Hover Ketika Kursor Menyentuh Gambar */
+.photo-strip-row img:hover {
+    transform: translateY(-5px); /* Gambar sedikit terangkat */
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
 
 /* ===========================================================
    KONTAK
@@ -550,6 +620,7 @@ main > section {
 
 .contact {
   text-align: center;
+  padding-top: 100px;
 }
 
 .contact-inner {
